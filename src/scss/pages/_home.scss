@@ -1,4 +1,5 @@
 .container{
     display: grid;
-    grid-template-rows: 8rem min-content min-content 100vh max-content max-content max-content 100vh;
+    grid-template-rows: 
+        8rem min-content min-content 100vh max-content max-content max-content;
 }
