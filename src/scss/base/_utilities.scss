@@ -1,0 +1,43 @@
+.heading{
+    font-family: "Work Sans";
+    color: var(--font-secondary);
+    
+    &-1{
+        font-size: 5rem;
+        margin-bottom: 3rem;
+        text-align: center;}
+
+    &-2{
+        font-size: 3.2rem;
+        margin-bottom: 1.2rem;}
+
+    &-3{
+        font-size: 2.5rem;
+        margin-bottom: 1.2rem;}
+
+    &-4{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;}
+}
+.text-center{ text-align: center;}
+.paragraph{
+    font-family: "Work Sans";
+    font-size: 1.8rem;
+    width: 73%;
+    color: var(--font-secondary);
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 3.5rem;
+
+    &--start{
+        font-size: 1.8rem;
+        justify-items: flex-start;   
+    }
+}
+.link{
+    margin: 2rem 0 2rem 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.mt-md{ margin-top: 10rem;}
+.mb-md{ margin-bottom: 10rem;}

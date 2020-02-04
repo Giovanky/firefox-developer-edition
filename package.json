@@ -1,0 +1,13 @@
+{
+  "name": "firefox-developer-edition",
+  "version": "1.0.0",
+  "description": "a simple cover of mozilla firefox developer edition page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/scss/main.scss:src/css/style.css --watch",
+    "compress": "sass src/css/style.css:src/css/style.css --style=compressed"
+  },
+  "keywords": [],
+  "author": "Giovanny Grotesque <giovankyandres@gmail.com>",
+  "license": "ISC"
+}

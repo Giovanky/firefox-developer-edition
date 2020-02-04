@@ -1,0 +1,14 @@
+.btn{
+    padding: 1.6rem 3.6rem;
+    border: none;
+    background-color: var(--primary);
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+    margin: 2rem;
+    border-radius: 3px;
+
+    &:hover{
+        background-color: var(--primary-dark);
+    }
+}

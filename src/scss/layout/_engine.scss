@@ -1,0 +1,17 @@
+.engine{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__img{
+        justify-self: center;
+        align-self: center;
+        height: 50%;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        width: 38%;
+    }
+}

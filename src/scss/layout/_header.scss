@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8rem 10rem;
+
+    &__logo{
+        width: 30vw;
+        margin-bottom: 3rem;
+    }
+
+    &__title{
+        width: 65%;
+        text-align: center;
+    }
+
+    .small{
+        &--link{
+            text-decoration: none;
+            color: var(--font-secondary);
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        &--text{
+            color: var(--font-secondary);
+            font-size: 1.3rem;
+            font-weight: 400;
+            width: 28%;
+            text-align: center;
+        }
+    }
+}

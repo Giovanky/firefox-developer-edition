@@ -1,0 +1,15 @@
+.tools{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .tool{
+        margin: 2rem;
+        width: 40%;
+
+        &__img{
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+}

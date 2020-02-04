@@ -1,0 +1,20 @@
+.features{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.features-container{
+    display: grid;
+    grid-gap: 6rem;
+    margin: 3rem 4rem 3rem 4rem;
+    
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    justify-content: center;
+
+    .feature{
+        display: grid;
+        grid-row-gap: .7rem;
+        grid-template-columns: minmax(min-content, max-content);
+        grid-template-rows: repeat(3, min-content);
+    }
+}
