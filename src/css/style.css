@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Hind+Madurai:300,400,600,700|Work+Sans:300,400,700&display=swap");
+:root {
+  --primary: rgb(11, 66, 216);
+  --primary-light: rgb(61, 103, 155);
+  --primary-dark: rgb(1, 46, 105);
+  --font-color: rgb(1, 6, 15);
+  --font-secondary: rgb(20, 1, 43);
+}
+
 *,
 *::before,
 *::after {
@@ -9,6 +17,11 @@
 
 html {
   font-size: 62.5%;
+}
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 55%;
+  }
 }
 
 body {
@@ -75,14 +88,6 @@ body {
   margin-bottom: 10rem;
 }
 
-:root {
-  --primary: rgb(11, 66, 216);
-  --primary-light: rgb(61, 103, 155);
-  --primary-dark: rgb(1, 46, 105);
-  --font-color: rgb(1, 6, 15);
-  --font-secondary: rgb(20, 1, 43);
-}
-
 .btn {
   padding: 1.6rem 3.6rem;
   border: none;
@@ -108,6 +113,12 @@ body {
   margin-left: 6rem;
   font-size: 1.7rem;
   font-weight: 700;
+}
+@media only screen and (max-width: 68.75em) {
+  .nav {
+    width: 100vw;
+    margin: auto;
+  }
 }
 .nav a {
   text-decoration: none;
@@ -143,6 +154,11 @@ body {
   width: 65%;
   text-align: center;
 }
+@media only screen and (max-width: 68.75em) {
+  .header__title {
+    width: 80%;
+  }
+}
 .header .small--link {
   text-decoration: none;
   color: var(--font-secondary);
@@ -173,15 +189,30 @@ body {
   align-items: center;
   margin: 2rem;
 }
+@media only screen and (max-width: 68.75em) {
+  .engine {
+    flex-direction: column-reverse;
+  }
+}
 .engine__img {
   justify-self: center;
   align-self: center;
   height: 50%;
 }
+@media only screen and (max-width: 43.75em) {
+  .engine__img {
+    height: 30%;
+  }
+}
 .engine .description {
   display: flex;
   flex-direction: column;
   width: 38%;
+}
+@media only screen and (max-width: 68.75em) {
+  .engine .description {
+    width: 50%;
+  }
 }
 
 .tools {
@@ -189,9 +220,20 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media only screen and (max-width: 68.75em) {
+  .tools {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .tools .tool {
   margin: 2rem;
   width: 40%;
+}
+@media only screen and (max-width: 68.75em) {
+  .tools .tool {
+    width: 60%;
+  }
 }
 .tools .tool__img {
   width: 100%;
@@ -218,20 +260,39 @@ body {
   grid-template-columns: minmax(min-content, max-content);
   grid-template-rows: repeat(3, min-content);
 }
+@media only screen and (max-width: 37.5em) {
+  .features-container .feature {
+    margin: 0;
+    grid-gap: 0;
+  }
+  .features-container .feature p {
+    width: 70%;
+  }
+}
 
 .engage {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
   background: linear-gradient(var(--primary-dark), var(--font-secondary));
-  grid-row-gap: 5rem;
-  padding: 5rem;
-  justify-content: center;
+  height: 100vh;
+  padding: 4rem;
+  grid-row-gap: 10rem;
+  grid-template-columns: repeat(2, minmax(min-content, 50rem));
+  justify-content: space-evenly;
   align-content: center;
 }
+@media only screen and (max-width: 81.25em) {
+  .engage {
+    grid-template-columns: repeat(2, minmax(min-content, 40rem));
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .engage {
+    grid-template-columns: repeat(1, minmax(min-content, 50rem));
+    height: 120vh;
+  }
+}
 .engage .card {
-  margin: 5rem;
   color: #fff;
-  width: 45%;
   justify-self: center;
   align-self: center;
 }

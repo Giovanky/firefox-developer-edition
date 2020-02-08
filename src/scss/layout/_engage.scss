@@ -1,18 +1,30 @@
 .engage{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
     background: linear-gradient(var(--primary-dark), var(--font-secondary));
-    grid-row-gap: 5rem;
-    padding: 5rem;
-    justify-content: center;
+    height: 100vh;
+    padding: 4rem;
+    grid-row-gap: 10rem;
+    grid-template-columns: repeat(2, minmax(min-content, 50rem));
+    justify-content: space-evenly;
     align-content: center;
 
+    @media only screen and (max-width: $bp-big) {
+        grid-template-columns: repeat(2, minmax(min-content, 40rem));
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: repeat(1, minmax(min-content, 50rem));
+        height: 120vh;
+    }
+
     .card{
-        margin: 5rem;
         color: #fff;
-        width: 45%;
         justify-self: center;
         align-self: center;
+
+        @media only screen and (max-width: $bp-largest) {
+            
+        }
 
         &__title{
             font-size: 3rem;

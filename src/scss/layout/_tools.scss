@@ -3,9 +3,18 @@
     flex-wrap: wrap;
     justify-content: space-around;
 
+    @media only screen and (max-width: $bp-largest) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .tool{
         margin: 2rem;
         width: 40%;
+
+        @media only screen and (max-width: $bp-largest) {
+            width: 60%;
+        }
 
         &__img{
             width: 100%;
